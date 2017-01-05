@@ -2464,7 +2464,7 @@ var util = require("./util")
 
 var build = function build (min) {
   return lazypipe()
-    .pipe(riot, opts.riot(min)
+    .pipe(riot, opts.riot(min))
     .pipe(js.build(min, false))
 }
 
