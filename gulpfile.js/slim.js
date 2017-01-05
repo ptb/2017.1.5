@@ -38,16 +38,16 @@ var inspect = function inspect () {
 
 // -- gulp ------------------------------------------------------------------
 
-gulp.task("watch:slim", function (done) {
-  gulp.watch(glob, opts.watch)
-    .on("all", function (evt, file) {
-      if (["add", "change"].includes(evt)) {
-        util.src(file, false, inspect())
-          .pipe(gulp.dest(opts.path.src))
-      }
-    })
-  done()
-})
+// gulp.task("watch:slim", function (done) {
+//   gulp.watch(glob, opts.watch)
+//     .on("all", function (evt, file) {
+//       if (["add", "change"].includes(evt)) {
+//         util.src(file, false, inspect())
+//           .pipe(gulp.dest(opts.path.src))
+//       }
+//     })
+//   done()
+// })
 
 // -- exports ---------------------------------------------------------------
 
