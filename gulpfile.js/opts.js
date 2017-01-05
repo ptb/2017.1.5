@@ -168,7 +168,7 @@ var opts = {
   "slim": function slim (min) {
     return {
       "chdir": true,
-      "options": ["attr_quote='\"'", `format=:${this.ext.html}`,
+      "options": ["attr_quote='\"'", `format=:xhtml`,
         "shortcut={ '.' => { attr: 'class' }, '@' => { attr: 'role' }, " +
         "'&' => { attr: 'type', tag: 'input' }, '#' => { attr: 'id' }, " +
         "'%' => { attr: 'itemprop' }, '^' => { attr: 'data-is' } }",
