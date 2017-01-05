@@ -39,16 +39,16 @@ gulp.task("build:svg", function (done) {
   done()
 })
 
-gulp.task("watch:svg", function (done) {
-  gulp.watch(glob, opts.watch)
-    .on("all", function (evt, file) {
-      if (["add", "change"].includes(evt)) {
-        util.src(file, false, inspect())
-          .pipe(gulp.dest(opts.path.src))
-      }
-    })
-  done()
-})
+// gulp.task("watch:svg", function (done) {
+//   gulp.watch(glob, opts.watch)
+//     .on("all", function (evt, file) {
+//       if (["add", "change"].includes(evt)) {
+//         util.src(file, false, inspect())
+//           .pipe(gulp.dest(opts.path.src))
+//       }
+//     })
+//   done()
+// })
 
 // -- exports ---------------------------------------------------------------
 
