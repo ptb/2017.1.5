@@ -14,7 +14,7 @@ var util = require("./util")
 
 var build = function build (min, wrap) {
   return lazypipe()
-    .pipe(babel, opts.babel(min))
+    // .pipe(babel, opts.babel(min))
     .pipe(gulpIf, !min, jsbeautifier(opts.jsbeautifier))
     .pipe(gulpIf, !min, eslint(opts.eslint))
     .pipe(js.build(min, wrap))
